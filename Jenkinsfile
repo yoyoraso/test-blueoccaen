@@ -17,7 +17,7 @@ pipeline {
 
         stage('Build3') {
           steps {
-            echo 'Build3'
+            sh "cd yaya"
           }
         }
 
@@ -26,7 +26,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        echo 'Hello From Test'
+        sh "cd yaya"
       }
     }
 
