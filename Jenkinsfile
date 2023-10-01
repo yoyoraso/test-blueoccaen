@@ -24,15 +24,13 @@ pipeline {
       }
     }
 
-    stage('Test') {
-      steps {
-        sh 'cd yaya'
-      }
-    }
-
     stage('Deploy') {
       steps {
         echo 'Hello From Last Step'
+        waitUntil(initialRecurrencePeriod: 10) {
+          input 'want to deploy'
+        }
+
       }
     }
 
