@@ -21,6 +21,13 @@ pipeline {
           }
         }
 
+        stage('') {
+          steps {
+            git(url: 'https://github.com/yoyoraso/privetrepo.git', branch: 'main', credentialsId: '25c0135d-dca3-4578-a7ca-78126b36d242')
+            sh 'cat test.txt'
+          }
+        }
+
       }
     }
 
