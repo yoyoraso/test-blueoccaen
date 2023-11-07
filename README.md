@@ -1,1 +1,1 @@
-# test-blueoccaen
+# test jenkins blueoccaen plugin
